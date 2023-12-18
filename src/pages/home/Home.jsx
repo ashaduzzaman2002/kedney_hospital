@@ -13,174 +13,134 @@ import {
 } from "components";
 import Footer1 from "components/Footer1";
 import Layout from "layout/Layout";
+import { CurveArrow } from "assets/svg/Icon";
 
 const Home = () => {
   return (
     <Layout>
-        
+      <div className="bg-[#F5F6F9] max-h-screen">
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 max-w-[1800px] lg:px-28 px-4 pt-20">
+          <div className="pt-12">
+            <h1 className="text-[#032342] text-6xl font-medium font-fredoka">
+              Find the good life by {' '}
+              <span className=" font-fredoka text-[#6285CA]">
+                good
+              </span> health{" "}
+              {/* <img src="/assets/images/medicine.png" alt="medicine" /> */}
+            </h1>
+            <p>
+              Dhameliya Kidney Hospital has born out of the need for a good
+              centre which catered to patients with complicated kidney diseases
+              in Surat.
+            </p>
+            <div>
+              <Button>Get Appointment</Button>
+              <button>Learn More</button>
+
+              <CurveArrow />
+            </div>
+
+            <div>
+              <img src="/assets/images/homeImage1.png" alt="homeImage1" />
+              <img src="/assets/images/blurHospital.png" alt="blurHospital" />
+            </div>
+          </div>
+
+          <div className=" py-14 h-[60vh] lg:h-auto">
+            <div class="grid grid-cols-2 gap-2 lg:gap-4 h-full">
+              <div class="col-span-1 h-full">
+                <div class="grid grid-rows-10 gap-2 lg:gap-4 h-full">
+                  <div class="row-span-2 gap-2 lg:gap-4 grid grid-cols-2">
+                    <div className="h-full bg-[#6285CA] rounded-[20px] flex align-middle justify-center">
+                      <div
+                        className="h-[80%] w-full"
+                        style={{
+                          backgroundImage: `url(../../../public/assets/images/medikit.png)`,
+                          backgroundRepeat: "no-repeat",
+                          backgroundSize: "contain",
+                          backgroundPosition: "center",
+                        }}
+                      ></div>
+                    </div>
+                    <div className=" h-full bg-[#38518233] rounded-[20px] overflow-hidden flex align-middle justify-center">
+                      <div
+                        className="h-[80%] w-full"
+                        style={{
+                          backgroundImage: `url(../../../public/assets/images/kedney.png)`,
+                          backgroundRepeat: "no-repeat",
+                          backgroundSize: "contain",
+                          backgroundPosition: "center",
+                        }}
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="row-span-4 bg-[#6285CA] rounded-[20px] flex">
+                    <div
+                      style={{
+                        backgroundImage: `url(../../../public/assets/images/phandsome-doctor.png)`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "contain",
+                        backgroundPosition: "center",
+                      }}
+                      className="w-full h-[90%] mt-auto"
+                    ></div>
+                  </div>
+                  <div
+                    style={{
+                      backgroundImage: `url(../../../public/assets/svg/curve.svg)`,
+                      backgroundRepeat: "no-repeat",
+                      backgroundSize: "cover",
+                      backgroundPosition: "bottom",
+                    }}
+                    class="row-span-3 bg-[#385182] p-0 rounded-[20px] h-full relative"
+                  >
+                    <div className="flex flex-col justify-between h-full absolute w-full p-5">
+                      <div className="flex align-middle gap-4">
+                        <img src="/assets/images/profile.png" alt="" />
+                        <div>
+                          <h2 className="text-white-A700 font-medium font-fredoka text-lg">
+                            Dr. Alex Smith
+                          </h2>
+                          <p className="text-[#AFB9CD]">Infermrdica Hospital</p>
+                        </div>
+                      </div>
+                      <button className=" border border-white-A700 w-full h-10 text-white-A700 rounded-[10px]">
+                        Make Appointment
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-span-1 h-full">
+                <div class="grid grid-rows-5 gap-2 lg:gap-4 h-full">
+                  <div class="row-span-3 bg-[#385182] rounded-[20px] relative">
+                    <div
+                      style={{
+                        backgroundImage: `url(../../../public/assets/images/doctor-hospital-with-stethoscope.png)`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "contain",
+                        backgroundPosition: "center",
+                      }}
+                      className="w-full h-[110%] mt-auto absolute bottom-0"
+                    ></div>
+                  </div>
+                  <div
+                    style={{
+                      backgroundImage: `url(../../../public/assets/images/operation.png)`,
+                      backgroundRepeat: "no-repeat",
+                      backgroundSize: "cover",
+                    }}
+                    class="row-span-2 bg-purple-200 rounded-[20px] "
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="bg-white-A700 flex flex-col font-dmsans items-center justify-start mx-auto w-full">
         <div className="flex flex-col items-start justify-start w-full">
-          <div className="bg-gray-100 sm:h-[485px] md:h-[721px] h-[879px] pt-8 md:px-5 px-8 relative w-full">
-            <div className="flex flex-col md:gap-10 gap-[105px] h-full items-start justify-start m-auto w-[83%]">
-             
-              <div className="md:h-[328px] h-[690px] relative w-3/4 md:w-full">
-                <div className="absolute bg-gradient2  bottom-[0] flex flex-col items-center justify-start left-[0] rounded-tl-[148px] rounded-tr-[148px] w-[34%]">
-                  <div className="h-[291px] relative w-full">
-                    <Img
-                      className="h-[291px] m-auto object-cover rounded-tl-[222px] rounded-tr-[222px] w-full"
-                      src="images/img_group1171275089.png"
-                      alt="group1171275089"
-                    />
-                    <Img
-                      className="absolute h-[291px] inset-[0] justify-center m-auto object-cover w-full"
-                      src="images/img_image203.png"
-                      alt="image203"
-                    />
-                  </div>
-                </div>
-                <Text
-                  className="absolute leading-[130.00%] left-[0] text-blue_gray-400 text-xl top-[24%] w-[57%] sm:w-full"
-                  size="txtDMSansRegular20"
-                >
-                  Dhameliya Kidney Hospital has born out of the need for a good
-                  centre which catered to patients with complicated kidney
-                  diseases in Surat.
-                </Text>
-                <div className="flex flex-row gap-6 h-full items-center justify-between mt-[276px] w-[43%]">
-                  <Input
-                    name="group1000003543"
-                    placeholder="Get Appointment"
-                    className="font-medium leading-[normal] p-0 placeholder:text-white-A700 text-left text-lg w-full"
-                    wrapClassName=""
-                    shape="round"
-                    color="blue_gray_700"
-                    size="xs"
-                    variant="fill"
-                  ></Input>
-                  <Button
-                    className="cursor-pointer font-medium leading-[normal] min-w-[155px] text-center text-lg"
-                    shape="round"
-                    color="blue_gray_700"
-                    size="md"
-                    variant="outline"
-                  >
-                    Learn More
-                  </Button>
-                </div>
-                <div className="absolute font-cormorantgaramond md:h-[289px] h-[433px] inset-x-[0] mx-auto top-[0] w-full">
-                  <div className="absolute h-36 left-[0] top-[1%] w-[70%] md:w-full">
-                    <Text
-                      className="m-auto md:text-5xl text-6xl text-blue_gray-700 w-full"
-                      size="txtCormorantGaramondBold60"
-                    >
-                      <span className="text-blue_gray-900 font-fredoka text-left font-medium">
-                        Find the good life by{" "}
-                      </span>
-                      <span className="text-indigo-300 font-fredoka text-left font-semibold">
-                        good
-                      </span>
-                      <span className="text-blue_gray-700 font-fredoka text-left font-medium">
-                        {" "}
-                      </span>
-                      <span className="text-blue_gray-900 font-fredoka text-left font-medium">
-                        health
-                      </span>
-                    </Text>
-                    <Img
-                      className="absolute bottom-[9%] h-10 object-cover right-[40%] w-[8%]"
-                      src="images/img_m028t0135emed.png"
-                      alt="m028t0135emed"
-                    />
-                  </div>
-                  <div className="absolute bg-indigo-300_01 bottom-[0] flex flex-col items-center justify-end pt-[22px] sm:px-5 px-[22px] right-[0] rounded-[20px] w-[32%]">
-                    <Img
-                      className="h-[267px] md:h-auto object-cover w-4/5"
-                      src="images/img_portraitsmilin.png"
-                      alt="portraitsmilin"
-                    />
-                  </div>
-                  <div className="absolute bg-indigo-300_01 flex flex-col items-center justify-start p-[22px] sm:px-5 right-[17%] rounded-[20px] top-[0] w-[16%]">
-                    <Img
-                      className="h-[83px] md:h-auto object-cover w-[83px]"
-                      src="images/img_65781551.png"
-                      alt="65781551"
-                    />
-                  </div>
-                  <div className="absolute bg-blue_gray-700_33 flex flex-col items-center justify-start p-[13px] right-[0] rounded-[20px] top-[0] w-[16%]">
-                    <Img
-                      className="h-[101px] md:h-auto object-cover w-[101px]"
-                      src="images/img_87919741.png"
-                      alt="87919741"
-                    />
-                  </div>
-                  <Img
-                    className="absolute bottom-[22%] h-[87px] right-[36%]"
-                    src="images/img_image50traced.svg"
-                    alt="image50traced"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="absolute h-[385px] right-[9%] top-[18%] w-1/5">
-              <div className="absolute bg-blue_gray-700 bottom-[0] h-[356px] inset-x-[0] mx-auto rounded-[20px] w-full"></div>
-              <Img
-                className="absolute h-[385px] inset-[0] justify-center m-auto object-cover w-[91%]"
-                src="images/img_femaledoctorh.png"
-                alt="femaledoctorh"
-              />
-            </div>
-            <div className="absolute bottom-[5%] md:h-56 h-[276px] right-[9%] w-[43%] md:w-full">
-              <div className="absolute bottom-[0] md:h-[163px] h-[199px] left-[0] w-[71%] sm:w-full">
-                <div className="absolute bg-blue_gray-700 h-[163px] left-[7%] rounded-[20px] top-[0] w-[65%]"></div>
-                <div
-                  className="absolute bg-cover bg-no-repeat bottom-[0] flex flex-col h-[157px] inset-x-[0] items-start justify-end mx-auto p-14 md:px-10 sm:px-5 w-full"
-                  style={{ backgroundImage: "url('images/img_group481.svg')" }}
-                >
-                  <Button
-                    className="cursor-pointer leading-[normal] min-w-[219px] ml-2 md:ml-[0] mt-[5px] text-center text-lg"
-                    shape="round"
-                    color="white_A700"
-                    size="sm"
-                    variant="outline"
-                  >
-                    Make Appointment
-                  </Button>
-                </div>
-              </div>
-              <Img
-                className="absolute h-56 object-cover right-[0] rounded-[20px] top-[0] w-[46%]"
-                src="images/img_rectangle4349.png"
-                alt="rectangle4349"
-              />
-              <div className="absolute flex flex-row gap-4 items-start justify-center left-[10%] top-[38%] w-[35%]">
-                <Img
-                  className="h-[47px] md:h-auto rounded-[50%] w-[47px]"
-                  src="images/img_ellipse221.png"
-                  alt="ellipse221"
-                />
-                <div className="flex flex-col items-start justify-start">
-                  <Text
-                    className="text-white-A700 text-xl"
-                    size="txtFredokaMedium20"
-                  >
-                    Dr. Alex Smith
-                  </Text>
-                  <Text
-                    className="mt-1 text-base text-blue_gray-200"
-                    size="txtDMSansRegular16"
-                  >
-                    Infermrdica Hospital
-                  </Text>
-                </div>
-              </div>
-            </div>
-            <Img
-              className="absolute bottom-[7%] h-[60px] left-[40%] object-cover w-[5%]"
-              src="images/img_m028t0135amed.png"
-              alt="m028t0135amed"
-            />
-            
-          </div>
+         
 
           
           <div className="h-[513px] sm:h-[577px] md:h-[965px] max-w-[1220px] mt-[92px] mx-auto md:px-5 relative w-full">

@@ -7,7 +7,7 @@ import "./navbar.css";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
-    <div className="bg-[#F5F6F9] relative">
+    <div className="bg-[#F5F6F9] absolute w-full z-10">
       <nav
         style={{ alignItems: "center" }}
         className="max-w-[1800px] lg:px-28 px-4 py-4 mx-auto flex align-middle justify-between"
@@ -19,23 +19,27 @@ const Navbar = () => {
             alt="logo7701"
           />
           <Text
-            className="text-blue_gray-900 text-lg w-[70%] sm:w-full"
+            className="text-blue_gray-900 text-lg w-[70%] sm:w-full max-w-[200px] font-fredoka"
             size="txtFredokaSemiBold18"
           >
             Dhameliya Kidney Hospital
           </Text>
         </div>
 
-        <ul className="lg:flex hidden gap-16" style={{ alignItems: "center" }}>
+        <ul className="lg:flex hidden gap-8" style={{ alignItems: "center" }}>
           <li>
-            <Link to={"/"}>Home</Link>
+            <Link className="text-[#032342] text-lg" to={"/"}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link to={"/"}>About</Link>
+            <Link className="text-[#032342] text-lg" to={"/"}>
+              About
+            </Link>
           </li>
 
           <div class="group relative inline-block z-10">
-            <li class=" transition duration-300 ease-in-out transform flex gap-2">
+            <li class=" transition duration-300 ease-in-out transform flex align-middle gap-2 text-[#032342] text-lg">
               Medical Services <Downarrow />
             </li>
             <div class="hidden absolute mt-1 bg-white shadow-md  py-2 w-36 rounded-md group-hover:block bg-white-A700">
@@ -60,13 +64,19 @@ const Navbar = () => {
             </div>
           </div>
           <li>
-            <Link to={"/"}>Career</Link>
+            <Link className="text-[#032342] text-lg" to={"/"}>
+              Career
+            </Link>
           </li>
           <li>
-            <Link to={"/"}>News</Link>
+            <Link className="text-[#032342] text-lg" to={"/"}>
+              News
+            </Link>
           </li>
           <li>
-            <Link to={"/"}>Contact</Link>
+            <Link className="text-[#032342] text-lg" to={"/"}>
+              Contact
+            </Link>
           </li>
         </ul>
 
@@ -86,16 +96,20 @@ const Navbar = () => {
           </Button>
         </div>
 
-        <div>
-          <button onClick={() => setToggleMenu(true)} className="block lg:hidden bg-white-A700 w-10 h-10 flex align-middle justify-center rounded-full">
-            <Menubar />
-          </button>
-        </div>
+        <button
+          onClick={() => setToggleMenu(true)}
+          className="lg:hidden bg-white-A700 w-10 h-10 flex align-middle justify-center rounded-full"
+        >
+          <Menubar />
+        </button>
       </nav>
 
       {toggleMenu && (
         <div className=" block lg:hidden bg-black-900_33 fixed top-0 bottom-0 right-0 left-0">
-          <div onClick={() => setToggleMenu(false)} className="absolute top-0 right-0 left-0 bottom-0"></div>
+          <div
+            onClick={() => setToggleMenu(false)}
+            className="absolute top-0 right-0 left-0 bottom-0"
+          ></div>
           <div className="bg-white-A700 h-full w-64 relative z-10">
             <div
               className="flex align-middle p-2"
