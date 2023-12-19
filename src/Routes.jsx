@@ -5,6 +5,7 @@ import NotFound from "pages/NotFound";
 import Home from "pages/home/Home";
 import Footer from "components/Footer";
 import NewsLetter from "components/NewsLetter/NewsLetter";
+import NewsPage from "pages/News";
 const ContactUs = React.lazy(() => import("pages/ContactUs"));
 const News = React.lazy(() => import("pages/News"));
 const Career = React.lazy(() => import("pages/Career"));
@@ -20,7 +21,7 @@ const ProjectRoutes = () => {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/dev" element={<NewsLetter />} />
+          <Route path="/dev" element={<NewsPage />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/home1" element={<Home1 />} />
           <Route path="/about" element={<About />} />

@@ -1,0 +1,151 @@
+.card-lg {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 1.5rem;
+    border-radius: 1.875rem;
+    background: #FFF;
+    box-shadow: 10px 14px 56px -1px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    width: 100%;
+}
+
+.card-lg span {
+    color: #6285CA;
+    font-family: DM Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem; /* 150% */
+}
+
+.card-lg p {
+    color: #767676;
+    font-family: DM Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 150% */
+}
+
+.card-lg h1 {
+    color: #032342;
+    font-family: Fredoka;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem; /* 133.333% */
+}
+
+.card-md {
+    padding: 1.5rem;
+    border-radius: 1.875rem;
+    background: #FFF;
+    box-shadow: 10px 14px 56px -1px rgba(0, 0, 0, 0.07);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-md span {
+    color: #6285CA;
+    font-family: DM Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem; /* 150% */
+}
+
+.card-md p {
+    color: #767676;
+    font-family: DM Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 150% */
+}
+
+.card-md h1 {
+    color: #032342;
+    font-family: Fredoka;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem; /* 133.333% */
+}
+
+
+.card-sm {
+    border-radius: 1.875rem;
+    background: #FFF;
+    box-shadow: 10px 14px 56px -1px rgba(0, 0, 0, 0.08);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 1rem;
+}
+
+.card-sm span {
+    color: #6285CA;
+    font-family: DM Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem; /* 150% */
+}
+
+.card-sm h1 {
+    color: #032342;
+    font-family: Fredoka;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem; /* 133.333% */
+}
+
+.newspage-container {
+    max-width: 90%;
+}
+
+.newspage-container h1 {
+    color: #032342;
+    text-align: center;
+    font-family: Fredoka;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.newspage-container h1 span {
+    color: #385182;
+    font-family: Fredoka;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.newspage-container h3 {
+    color: #6285CA;
+    font-family: DM Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.125rem; /* 112.5% */
+    letter-spacing: 0.1875rem;
+    text-transform: uppercase;
+}
+
+.newspage-container .grid1 {
+    display: grid;
+    grid-template-columns: 58% 40%;
+    justify-content: space-between;
+}
+
+.newspage-container .grid2 {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-content: space-between;
+}

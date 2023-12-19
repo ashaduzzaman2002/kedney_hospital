@@ -180,4 +180,12 @@ export const Line2 = () => (
   </svg>
 );
 
+export const NEArrow = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="12" cy="12" r="12" fill="#E8EDF7"/>
+    <path d="M10.6274 9.15295L14.6937 9.15295L14.6937 13.2192" stroke="#385182" stroke-width="1.1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M9 14.8472L14.6371 9.21004" stroke="#385182" stroke-width="1.1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+);
+
 // export const Line1 = () => ();
