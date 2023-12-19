@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NotFound from "pages/NotFound";
 import Home from "pages/home/Home";
 import Footer from "components/Footer";
+import NewsLetter from "components/NewsLetter/NewsLetter";
 const ContactUs = React.lazy(() => import("pages/ContactUs"));
 const News = React.lazy(() => import("pages/News"));
 const Career = React.lazy(() => import("pages/Career"));
@@ -18,7 +19,8 @@ const ProjectRoutes = () => {
     <React.Suspense fallback={<>Loading...</>}>
       <Router>
         <Routes>
-          <Route path="/" element={<Footer />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/dev" element={<NewsLetter />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/home1" element={<Home1 />} />
           <Route path="/about" element={<About />} />
