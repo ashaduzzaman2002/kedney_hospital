@@ -7,7 +7,7 @@ const Footer = (props) => {
   return (
     <div className="footer-container-wrapper"> 
       <footer className="footer-container">        
-        <div className=" w-[80%]">
+        <div className="md:w-[80%]">
           <h1>
             Dhameliya Kidney Hospital
           </h1>
@@ -21,7 +21,7 @@ const Footer = (props) => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-4 w-[95%]">
+        <div className="flex flex-col gap-4 md:w-[95%]">
           <h3>
             Get in Touch
             <Line1/>
