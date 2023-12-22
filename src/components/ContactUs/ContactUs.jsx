@@ -22,7 +22,7 @@ const ContactUs = () => {
                         <Star1/>
                     </div>
                 </div>
-                <div className='mask-icon self-center hidden md:block'>
+                <div className='mask-icon self-center'>
                     <h4> Contact US </h4>
                     <h1 className='py-4'>
                         True <span> Healthcare </span> For Your <MaskFace/> Family!
