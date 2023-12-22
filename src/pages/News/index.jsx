@@ -48,7 +48,7 @@ const NewsPage = () => {
   ];
 
   return (
-    <div className=" flex flex-col justify-center items-center py-16">
+    <div className="newspage-container-wrapper flex flex-col justify-center items-center py-16">
       <div className="newspage-container">
         <h3 className="text-center">Our Blogs</h3>
         <h1 className="text-center">Latest <span>News</span> </h1>
@@ -62,6 +62,9 @@ const NewsPage = () => {
           {Data2.map((data) => (<CardSM { ...data } />))}
         </div>
 
+        <div className="flex justify-center items-center my-16">
+          <button className="btn">View More</button>
+        </div>
       </div>
       
     </div>

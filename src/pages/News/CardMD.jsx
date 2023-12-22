@@ -5,7 +5,7 @@ const CardMD = ({ title, description, image, avatar, name, date }) => {
   return (
     <div className='card-md'>
             <div>
-                <img src={image} alt="" />
+                <img src={image} alt="" className=' w-full h-full' />
             </div>
             <div className='w-[90%] justify-self-center my-auto pl-4'>
                 <h1>{title}</h1>
