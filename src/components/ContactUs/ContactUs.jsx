@@ -12,17 +12,17 @@ const ContactUs = () => {
                         <img className='' src={Doctor1} alt="" />
                     </div>
 
-                    <div className='image-over-box absolute top-16 -left-12'>
+                    <div className='image-over-box absolute md:top-16 md:-left-12 -top-10 -left-5'>
                         <div>🤝</div>
-                        <h5 className=' text-2xl font-bold'>25+</h5>
-                        <p>Partner Collaboration</p>
+                        <h5 className=' text-sm md:text-2xl font-bold'>25+</h5>
+                        <div className=' text-xs'>Partner <br /> Collaboration</div>
                     </div>
 
-                    <div className=' absolute right-10 bottom-16'>
+                    <div className=' absolute bottom-10 right-6 md:right-10 md:bottom-16'>
                         <Star1/>
                     </div>
                 </div>
-                <div className='mask-icon self-center'>
+                <div className='mask-icon self-center hidden md:block'>
                     <h4> Contact US </h4>
                     <h1 className='py-4'>
                         True <span> Healthcare </span> For Your <MaskFace/> Family!
@@ -68,7 +68,14 @@ const ContactUs = () => {
                 </div>
             </div>
 
-            <div className='options'>
+            <div className='options lg:hidden'>
+                <div className='flex justify-between'>
+                    <h2>Home Care</h2>
+                    <DiamondIcon1/>
+                    <h2>Adult Day Care</h2>
+                </div>
+            </div>
+            <div className='options hidden lg:block'>
                 <div className='flex justify-between'>
                     <h2>Home Care</h2>
                     <DiamondIcon1/>
