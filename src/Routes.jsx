@@ -7,7 +7,8 @@ import Footer from "components/Footer";
 import NewsLetter from "components/NewsLetter/NewsLetter";
 import NewsPage from "pages/News";
 import Help from "components/Help/Help";
-const ContactUs = React.lazy(() => import("pages/ContactUs"));
+import ContactUs from "components/ContactUs/ContactUs";
+// const ContactUs = React.lazy(() => import("pages/ContactUs"));
 const News = React.lazy(() => import("pages/News"));
 const Career = React.lazy(() => import("pages/Career"));
 const MedicalServicesdetail = React.lazy(
@@ -22,7 +23,7 @@ const ProjectRoutes = () => {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/dev" element={<Help />} />
+          <Route path="/dev" element={<ContactUs />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/home1" element={<Home1 />} />
           <Route path="/about" element={<About />} />
@@ -33,7 +34,7 @@ const ProjectRoutes = () => {
           />
           <Route path="/career" element={<Career />} />
           <Route path="/news" element={<News />} />
-          <Route path="/contactus" element={<ContactUs />} />
+          {/* <Route path="/contactus" element={<ContactUs />} /> */}
         </Routes>
       </Router>
     </React.Suspense>
