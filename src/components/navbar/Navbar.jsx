@@ -1,47 +1,81 @@
 import { Downarrow, Menubar, User } from "assets/svg/Icon";
-import { Button, Img, Text } from "components";
-import React, { useState } from "react";
+import { Button, Img } from "components";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ isHome }) => {
   const [toggleMenu, setToggleMenu] = useState(false);
+
+  const { pathname } = window.location;
+  const [activeLink, setActiveLink] = useState(pathname);
+
+  useEffect(() => {
+    setActiveLink(pathname);
+  }, [pathname]);
   return (
-    <div className="bg-[#F5F6F9] absolute w-full z-10">
+    <div
+      className={`bg-[#${isHome ? "F5F6F9" : "E6E9EF"}] absolute w-full z-10`}
+    >
       <nav
         style={{ alignItems: "center" }}
-        className="max-w-[1800px] lg:px-28 px-4 py-4 mx-auto flex align-middle justify-between"
+        className="max-w-[90%] py-4 mx-auto flex align-middle justify-between"
       >
-        <div className="flex align-middle" style={{ alignItems: "center" }}>
+        <Link
+          to="/"
+          className="flex align-middle"
+          style={{ alignItems: "center" }}
+        >
           <Img
             className="h-[52px] md:h-auto object-cover w-[52px]"
             src="images/img_logo7701.png"
             alt="logo7701"
           />
-          <Text
-            className="text-blue_gray-900 text-lg w-[70%] sm:w-full max-w-[200px] font-fredoka"
+          <h2
+            className="text-blue_gray-900 text-lg w-[70%] sm:w-full max-w-[200px] font-fredoka font-semibold"
             size="txtFredokaSemiBold18"
           >
             Dhameliya Kidney Hospital
-          </Text>
-        </div>
+          </h2>
+        </Link>
 
-        <ul className="lg:flex hidden gap-8" style={{ alignItems: "center" }}>
-          <li>
-            <Link className="text-[#032342] text-lg" to={"/"}>
+        <ul className="lg:flex hidden gap-10" style={{ alignItems: "center" }}>
+          <li className="relative">
+            <Link to={"/"} className="text-[#032342] text-lg">
               Home
             </Link>
+
+            <div
+              className={`w-[6px] h-[6px] rounded-full bg-[#385182] absolute right-1/2 translate-x-1/2 ${
+                activeLink === '/' ? "block" : "hidden"
+              }`}
+            />
           </li>
-          <li>
-            <Link className="text-[#032342] text-lg" to={"/"}>
+          <li className="relative">
+            <Link to={"/about"} className="text-[#032342] text-lg">
               About
             </Link>
+
+            <div
+              className={`w-[6px] h-[6px] rounded-full bg-[#385182] absolute right-1/2 translate-x-1/2 ${
+                activeLink === '/' ? "block" : "hidden"
+              }`}
+            />
           </li>
 
-          <div class="group relative inline-block z-10">
-            <li class=" transition duration-300 ease-in-out transform flex align-middle gap-2 text-[#032342] text-lg">
+          <div class="group inline-block z-10 relative">
+            <Link
+              to="/medical-services"
+              class=" transition duration-300 ease-in-out transform flex align-middle gap-2 text-[#032342] text-lg"
+            >
               Medical Services <Downarrow />
-            </li>
+            </Link>
+
+            <div
+              className={`w-[6px] h-[6px] rounded-full bg-[#385182] absolute right-1/2 translate-x-1/2 ${
+                activeLink === '/medical-services' ? "block" : "hidden"
+              }`}
+            />
             <div class="hidden absolute mt-1 bg-white shadow-md  py-2 w-36 rounded-md group-hover:block bg-white-A700">
               <a
                 href="#"
@@ -63,20 +97,38 @@ const Navbar = () => {
               </a>
             </div>
           </div>
-          <li>
-            <Link className="text-[#032342] text-lg" to={"/"}>
+          <li className="relative">
+            <Link to={"/career"} className="text-[#032342] text-lg">
               Career
             </Link>
+
+            <div
+              className={`w-[6px] h-[6px] rounded-full bg-[#385182] absolute right-1/2 translate-x-1/2 ${
+                activeLink === '/' ? "block" : "hidden"
+              }`}
+            />
           </li>
-          <li>
-            <Link className="text-[#032342] text-lg" to={"/"}>
+          <li className="relative">
+            <Link to={"/news"} className="text-[#032342] text-lg">
               News
             </Link>
+
+            <div
+              className={`w-[6px] h-[6px] rounded-full bg-[#385182] absolute right-1/2 translate-x-1/2 ${
+                activeLink === '/' ? "block" : "hidden"
+              }`}
+            />
           </li>
-          <li>
-            <Link className="text-[#032342] text-lg" to={"/"}>
+          <li className="relative">
+            <Link to={"/contact-us"} className="text-[#032342] text-lg">
               Contact
             </Link>
+
+            <div
+              className={`w-[6px] h-[6px] rounded-full bg-[#385182] absolute right-1/2 translate-x-1/2 ${
+                activeLink === '/contact-us' ? "block" : "hidden"
+              }`}
+            />
           </li>
         </ul>
 
@@ -120,12 +172,12 @@ const Navbar = () => {
                 src="images/img_logo7701.png"
                 alt="logo7701"
               />
-              <Text
+              <h2
                 className="text-blue_gray-900 text-lg w-[70%] sm:w-full"
                 size="txtFredokaSemiBold18"
               >
                 Dhameliya Kidney Hospital
-              </Text>
+              </h2>
             </div>
             <hr />
 

@@ -1,13 +1,12 @@
 import React from "react";
 import './style.css'
-import { Img, Line, Radio, RadioGroup, Text } from "components";
-import { DialerIcon, DiamondIcon, FbLogo, InstaLogo, Line1, Line2, LinkedInLogo, LoationIcon, RightArrow } from "../../assets/svg/Icon"
+import { DialerIcon, DiamondIcon, FbLogo, InstaLogo, Line1, LinkedInLogo, LoationIcon, RightArrow } from "../../assets/svg/Icon"
 
 const Footer = (props) => {
   return (
     <div className="footer-container-wrapper"> 
       <footer className="footer-container">        
-        <div className="md:w-[80%]">
+        <div className="md:w-[80%] max-w-[1800px]">
           <h1>
             Dhameliya Kidney Hospital
           </h1>
