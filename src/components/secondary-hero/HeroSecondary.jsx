@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const HeroSecondary = ({ title, shortTitle }) => {
   return (
-    <div className=" bg-[#E6E9EF] h-80 relative mb-28">
+    <div className=" bg-[#E6E9EF] h-80 relative lg:mb-44 mb-32">
       <div className=" max-w-[1800px] px-0 lg:px-4 py-4 relative flex justify-between">
         <img
           className="pt-48 pl-0 lg:pl-4 lg:w-auto w-16"

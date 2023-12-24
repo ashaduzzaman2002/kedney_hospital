@@ -9,7 +9,7 @@ import Ellipse5 from '../../assets/images/Ellipse5.svg'
 
 const NewsLetter = () => {
   return (
-    <div className=' newsletter-container flex justify-center items-center flex-col py-28'>
+    <div className=' newsletter-container flex justify-center items-center flex-col lg:py-28 py-[52px]'>
         <div className='relative flex justify-center items-center flex-col w-[90%] gap-4 py-10'>
             <h1>Newsletter</h1>
             <h3>Get Smarter About No-Code</h3>

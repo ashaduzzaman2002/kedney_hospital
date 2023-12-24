@@ -41,24 +41,34 @@ const Navbar = ({ isHome }) => {
 
         <ul className="lg:flex hidden gap-10" style={{ alignItems: "center" }}>
           <li className="relative">
-            <Link to={"/"} className="text-[#032342] text-lg">
+            <Link
+              to={"/"}
+              className={`${
+                activeLink === "/" ? "text-[#385182]" : "text-[#032342]"
+              } text-lg`}
+            >
               Home
             </Link>
 
             <div
               className={`w-[6px] h-[6px] rounded-full bg-[#385182] absolute right-1/2 translate-x-1/2 ${
-                activeLink === '/' ? "block" : "hidden"
+                activeLink === "/" ? "block" : "hidden"
               }`}
             />
           </li>
           <li className="relative">
-            <Link to={"/about"} className="text-[#032342] text-lg">
+            <Link
+              to={"/about"}
+              className={`${
+                activeLink === "/about" ? "text-[#385182]" : "text-[#032342]"
+              } text-lg`}
+            >
               About
             </Link>
 
             <div
               className={`w-[6px] h-[6px] rounded-full bg-[#385182] absolute right-1/2 translate-x-1/2 ${
-                activeLink === '/' ? "block" : "hidden"
+                activeLink === "/about" ? "block" : "hidden"
               }`}
             />
           </li>
@@ -66,14 +76,19 @@ const Navbar = ({ isHome }) => {
           <div class="group inline-block z-10 relative">
             <Link
               to="/medical-services"
-              class=" transition duration-300 ease-in-out transform flex align-middle gap-2 text-[#032342] text-lg"
+              class={`transition duration-300 ease-in-out transform flex align-bottom gap-2 ${
+                activeLink === "/medical-services"
+                  ? "text-[#385182]"
+                  : "text-[#032342]"
+              } text-lg`}
+              style={{ alignItems: "center" }}
             >
               Medical Services <Downarrow />
             </Link>
 
             <div
               className={`w-[6px] h-[6px] rounded-full bg-[#385182] absolute right-1/2 translate-x-1/2 ${
-                activeLink === '/medical-services' ? "block" : "hidden"
+                activeLink === "/medical-services" ? "block" : "hidden"
               }`}
             />
             <div class="hidden absolute mt-1 bg-white shadow-md  py-2 w-36 rounded-md group-hover:block bg-white-A700">
@@ -98,35 +113,52 @@ const Navbar = ({ isHome }) => {
             </div>
           </div>
           <li className="relative">
-            <Link to={"/career"} className="text-[#032342] text-lg">
+            <Link
+              to={"/career"}
+              className={`${
+                activeLink === "/career" ? "text-[#385182]" : "text-[#032342]"
+              } text-lg`}
+            >
               Career
             </Link>
 
             <div
               className={`w-[6px] h-[6px] rounded-full bg-[#385182] absolute right-1/2 translate-x-1/2 ${
-                activeLink === '/' ? "block" : "hidden"
+                activeLink === "/career" ? "block" : "hidden"
               }`}
             />
           </li>
           <li className="relative">
-            <Link to={"/news"} className="text-[#032342] text-lg">
+            <Link
+              to={"/news"}
+              className={`${
+                activeLink === "/news" ? "text-[#385182]" : "text-[#032342]"
+              } text-lg`}
+            >
               News
             </Link>
 
             <div
               className={`w-[6px] h-[6px] rounded-full bg-[#385182] absolute right-1/2 translate-x-1/2 ${
-                activeLink === '/' ? "block" : "hidden"
+                activeLink === "/news" ? "block" : "hidden"
               }`}
             />
           </li>
           <li className="relative">
-            <Link to={"/contact-us"} className="text-[#032342] text-lg">
+            <Link
+              to={"/contact-us"}
+              className={`${
+                activeLink === "/contact-us"
+                  ? "text-[#385182]"
+                  : "text-[#032342]"
+              } text-lg`}
+            >
               Contact
             </Link>
 
             <div
               className={`w-[6px] h-[6px] rounded-full bg-[#385182] absolute right-1/2 translate-x-1/2 ${
-                activeLink === '/contact-us' ? "block" : "hidden"
+                activeLink === "/contact-us" ? "block" : "hidden"
               }`}
             />
           </li>
@@ -150,7 +182,7 @@ const Navbar = ({ isHome }) => {
 
         <button
           onClick={() => setToggleMenu(true)}
-          className="lg:hidden bg-white-A700 w-10 h-10 flex align-middle justify-center rounded-full"
+          className="lg:hidden bg-white-A700 w-10 h-10 flex items-center justify-center rounded-full"
         >
           <Menubar />
         </button>
