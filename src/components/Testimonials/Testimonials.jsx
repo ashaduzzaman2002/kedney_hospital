@@ -1,4 +1,4 @@
-import { Avatar1, Avatar2, Dot1, Dot2, Dot3, InvertedCommaEndLG, InvertedCommaEndSM, InvertedCommaStartLG, InvertedCommaStartSM, PlayCircle1, PlayCircle2, Star2 } from 'assets/svg/Icon'
+import { Dot1, Dot2, Dot3, InvertedCommaEndLG, InvertedCommaEndSM, InvertedCommaStartLG, InvertedCommaStartSM, PlayCircle1, PlayCircle2, Star2 } from 'assets/svg/Icon'
 import './style.css'
 
 const Testimonials = () => {

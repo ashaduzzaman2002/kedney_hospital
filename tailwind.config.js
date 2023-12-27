@@ -112,6 +112,10 @@ module.exports = {
         cormorantgaramond: "Cormorant Garamond",
         crimsonpro: "Crimson Pro",
       },
+      aspectRatio: {
+        '4/3': '4 / 3',
+        '2/3': '2 / 3',
+      },
     },
   },
   plugins: [require("@tailwindcss/forms")],

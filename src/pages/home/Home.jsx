@@ -8,6 +8,7 @@ import { CurveArrow } from "assets/svg/Icon";
 import Testimonials from "components/Testimonials/Testimonials";
 import NewsPage from "components/News";
 import HomeContactUs from "components/ContactUs/ContactUs";
+import OurDoctor from "components/OurDoctor/OurDoctor";
 
 const Home = () => {
   return (
@@ -133,10 +134,11 @@ const Home = () => {
         </div>
       </div>
 
+      <div className="my-96"></div>
+      
+      <OurDoctor/>
       <Testimonials />
-      <HomeContactUs/>
-
-   
+      <HomeContactUs/>   
       <NewsPage />
       
     </Layout>

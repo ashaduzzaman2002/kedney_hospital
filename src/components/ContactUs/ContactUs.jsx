@@ -10,7 +10,7 @@ const HomeContactUs = () => {
 
                 <div className='self-center relative'>
                     <div className='w-full h-full flex justify-center items-center'>
-                        <img className='border bg-cover' src={Doctor1} alt="" />
+                        <img className='bg-cover' src={Doctor1} alt="" />
                         
                         <div className='image-over-box absolute md:top-16 md:-left-4 -top-10 -left-5'>
                             <div>🤝</div>
