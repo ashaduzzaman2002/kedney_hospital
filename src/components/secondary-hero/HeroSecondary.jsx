@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 
 const HeroSecondary = ({ title, shortTitle }) => {
   return (
-    <div className=" bg-[#E6E9EF] h-80 relative lg:mb-44 mb-32">
+    <div className=" bg-[#E6E9EF] h-72 lg:h-80 relative lg:mb-44 mb-32">
       <div className=" max-w-[1800px] px-0 lg:px-4 py-4 relative flex justify-between">
         <img
-          className="pt-48 pl-0 lg:pl-4 lg:w-auto w-16"
+          className="pt-40 pl-0 lg:pl-4 lg:w-auto w-16"
           src="/assets/images/blur-medkit.png"
           alt=""
         />
         <div className="lg:h-4 lg:w-4 h-3 w-3 border-[1px] border-[#000] bg-red-300 mt-28 lg:mt-40 rounded-full" />
-        <div className="lg:h-[13px] lg:w-[13px] w-[9px] h-[9px] bg-[#4F86ED] lg:mt-28 mt-48 rounded-full" />
+        <div className="lg:h-[13px] lg:w-[13px] w-[9px] h-[9px] bg-[#4F86ED] lg:mt-28 mt-40 rounded-full" />
 
         <img
           className="pt-0 pb-6 lg:pb-10 object-contain lg:w-auto w-16"
