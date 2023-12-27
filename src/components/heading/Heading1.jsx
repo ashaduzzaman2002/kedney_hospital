@@ -1,10 +1,10 @@
 import "./heading.css";
 
-const Heading1 = ({subHeading, headingStart, headingMid, headingLast}) => {
+const Heading1 = ({subHeading, headingStart, headingMid, headingLast, position = 'text-left'}) => {
   return (
     <div className="heading-container">
-      <h4 className="">{subHeading}</h4>
-      <h1 className=" text-left">
+      <h4 className={`${position}`}>{subHeading}</h4>
+      <h1 className={`${position}`}>
         {headingStart} <span> {headingMid} </span> {headingLast}
       </h1>
     </div>

@@ -9,6 +9,7 @@ import Testimonials from "components/Testimonials/Testimonials";
 import NewsPage from "components/News";
 import HomeContactUs from "components/ContactUs/ContactUs";
 import OurDoctor from "components/OurDoctor/OurDoctor";
+import Services from "components/Services/Services";
 
 const Home = () => {
   return (
@@ -136,6 +137,7 @@ const Home = () => {
 
       <div className="my-96"></div>
       
+      <Services/>
       <OurDoctor/>
       <Testimonials />
       <HomeContactUs/>
