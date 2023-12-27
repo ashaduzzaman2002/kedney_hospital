@@ -138,7 +138,8 @@ const Home = () => {
       
       <OurDoctor/>
       <Testimonials />
-      <HomeContactUs/>   
+      <HomeContactUs/>
+   
       <NewsPage />
       
     </Layout>
