@@ -1,9 +1,13 @@
-import { Location, Mail } from "assets/svg/Icon";
+import { Location, Mail, RightArrow, RightArrowWhite } from "assets/svg/Icon";
 import Heading from "components/heading/Heading";
 import HeroSecondary from "components/secondary-hero/HeroSecondary";
 import Layout from "layout/Layout";
 import React from "react";
 import "./conatctus.css";
+import Form from "components/form/Form";
+import Input from "components/form/Input";
+import TextArea from "components/form/TextArea";
+import { Button } from "components";
 
 const ContactUs = () => {
   return (
@@ -80,6 +84,48 @@ const ContactUs = () => {
             address="206-207, Cross Road Shopping Centre, Sayan Rd, Amroli, Surat, Gujarat 394107"
             email="arvind.dhameliya@ahoo.in"
           />
+        </div>
+
+        <div className="lg:pt-28 pt-[52px]">
+          <Form className='lg:p-20 px-6 py-[45px]'>
+            <div className="">
+              <p>help</p>
+              <h2>How Can We Help?</h2>
+              <p>
+                Please feel welcome to contact our friendly reception staff with
+                any general or medical enquiry. Our doctors will receive or
+                return any urgent calls.
+              </p>
+            </div>
+
+            <div className="mt-[42px] grid grid-cols-2 gap-6">
+              <div className="lg:col-span-1 col-span-2">
+                <Input placeholder="Name" />
+              </div>
+              <div className="lg:col-span-1 col-span-2">
+                <Input placeholder="Email" />
+              </div>
+              <div className="lg:col-span-1 col-span-2">
+                <Input placeholder="Phone Number" />
+              </div>
+              <div className="lg:col-span-1 col-span-2">
+                <Input placeholder="Subject" />
+              </div>
+              <div className="col-span-2">
+                <TextArea placeholder="Message" />
+              </div>
+            </div>
+
+            <Button
+              className="cursor-pointer font-medium leading-[normal] min-w-[258px] text-center text-lg rounded-[19px] mt-[32px] flex gap-2 items-center justify-center"
+              shape="round"
+              color="blue_gray_700"
+              size="md"
+              variant="fill"
+            >
+              Submit Request <RightArrowWhite />
+            </Button>
+          </Form>
         </div>
       </div>
     </Layout>
