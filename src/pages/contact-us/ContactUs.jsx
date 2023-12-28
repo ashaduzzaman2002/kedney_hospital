@@ -89,9 +89,9 @@ const ContactUs = () => {
         <div className="lg:pt-28 pt-[52px]">
           <Form className='lg:p-20 px-6 py-[45px]'>
             <div className="">
-              <p>help</p>
-              <h2>How Can We Help?</h2>
-              <p>
+              <p className="text-[#6285CA] font-fredoka lg:text-base text-sm font-medium uppercase" style={{letterSpacing: 3}}>help</p>
+              <h2 className="text-[#032342] font-fredoka lg:text-[40px] text-[24px] font-medium leading-[55px]">How Can We Help?</h2>
+              <p className="text-[#888] font-dmsans lg:text-[20px] text-sm font-medium leading-[18px] lg:leading-[32px] max-w-[1024px]">
                 Please feel welcome to contact our friendly reception staff with
                 any general or medical enquiry. Our doctors will receive or
                 return any urgent calls.
@@ -117,7 +117,7 @@ const ContactUs = () => {
             </div>
 
             <Button
-              className="cursor-pointer font-medium leading-[normal] min-w-[258px] text-center text-lg rounded-[19px] mt-[32px] flex gap-2 items-center justify-center"
+              className="cursor-pointer font-medium leading-[normal] lg:min-w-[258px] min-w-[215px] text-center text-lg lg:rounded-[19px] rounded-[10px] mt-[32px] flex gap-2 items-center justify-center"
               shape="round"
               color="blue_gray_700"
               size="md"
