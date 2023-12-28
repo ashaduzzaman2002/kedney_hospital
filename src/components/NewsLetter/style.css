@@ -3,8 +3,6 @@
 .newsletter-container h1 {
     color: #FFF;
     text-align: center;
-    font-family: Fredoka;
-    font-size: 3.125rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -67,3 +65,4 @@
 .newsletter-container .dia2 span {
     display: block;
 }
+
