@@ -11,7 +11,7 @@ const NewsLetter = () => {
   return (
     <div className=' newsletter-container flex justify-center items-center flex-col lg:py-28 py-[52px]'>
         <div className='relative flex justify-center items-center flex-col w-[90%] gap-4 py-10'>
-            <h1>Newsletter</h1>
+            <h1 className=' font-fredoka text-[32px] lg:text-[50px]'>Newsletter</h1>
             <h3>Get Smarter About No-Code</h3>
             <p className='w-[90%] md:w-[70%] lg:w-[50%] dia2'>
                 The best No-Code tips & tricks, for webflow & Framer developers from experts to beginner. Join our 3k community by subscribing

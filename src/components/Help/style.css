@@ -1,5 +1,5 @@
 .help-container-wrapper {
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
     padding: 5rem 0;
 }
@@ -7,7 +7,7 @@
 .help-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 74px;
 }
 
 .help-container h4 {
@@ -153,6 +153,11 @@
 
 /* sm	640px	 */
 @media screen and (max-width: 640px) {
+
+    .help-container-wrapper {
+        padding: 52px 0;
+    }
+    
     .help-container {
         max-width: 100%;
         gap: 2rem;
