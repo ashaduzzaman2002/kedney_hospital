@@ -8,8 +8,8 @@ const HomeAbout = () => {
   return (
     <div className='home-about-container-wrapper py-[10rem]'>
         <div className='home-about-container max-w-[90%] md:max-w-[80%] mx-auto md:grid md:grid-cols-2 flex flex-col-reverse gap-10'>
-            <div className='relative left'>
-                <div className='absolute top-14 -left-8 shadow-bs4 bg-white-A700 p-4 rounded-xl flex flex-col justify-center items-center gap-2'>
+            <div className='relative left mt-10 md:mt-0'>
+                <div className='absolute -top-10 left-0 md:top-14 md:-left-8 shadow-bs4 bg-white-A700 p-4 rounded-xl flex flex-col justify-center items-center gap-2'>
                     <h4>Our Happy Clients</h4>
                     <p>150+ Clients</p>
                     <div className=''><img src={GrpAvatar} alt="group-avatar" /></div>
