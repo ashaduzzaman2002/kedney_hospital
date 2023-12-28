@@ -11,6 +11,7 @@ import HomeContactUs from "components/ContactUs/ContactUs";
 import OurDoctor from "components/OurDoctor/OurDoctor";
 import Services from "components/Services/Services";
 import HomeHelp from "components/Help/HomeHelp";
+import HomeAbout from "components/About/HomeAbout";
 
 const Home = () => {
   return (
@@ -138,6 +139,7 @@ const Home = () => {
 
       <div className="my-96"></div>
       
+      <HomeAbout/>
       <Services/>
       <OurDoctor/>
       <Testimonials />
