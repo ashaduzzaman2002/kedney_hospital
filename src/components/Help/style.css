@@ -149,6 +149,10 @@
     .help-container-wrapper {
         max-width: 90%;
     }
+
+    .help-container h4 {
+        font-size: 14px;
+    }
 }
 
 /* sm	640px	 */

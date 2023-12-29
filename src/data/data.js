@@ -69,3 +69,21 @@ export const services2 = [
         title: 'ESWL'
     },
 ] 
+
+export const officer = [
+  {
+    id: 1,
+    image: '/assets/images/officer1.png',
+    title: 'Dr. Malvika Lapani'
+  },
+  {
+    id: 2,
+    image: '/assets/images/officer2.png',
+    title: 'Dr. Malvika Lapani'
+  },
+  {
+    id: 3,
+    image: '/assets/images/officer3.png',
+    title: 'Dr. Malvika Lapani'
+  },
+]

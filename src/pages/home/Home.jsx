@@ -138,7 +138,6 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="my-96"></div>
       <HomeAbout/>
       <Services/>
       <OurDoctor/>
