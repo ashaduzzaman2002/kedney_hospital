@@ -8,10 +8,10 @@ import { SpringArrow } from "assets/svg/Icon";
 const Card = () => {
 
     return (
-        <div className="absolute bottom-10 left-4 max-w-[45%] flex flex-col justify-center items-center object-contain bg-white-A700 shadow-bs4 rounded-[0.625rem] p-4">
+        <div className="absolute bottom-10 left-4 max-w-[60%] md:max-w-[45%] flex flex-col justify-center items-center object-contain bg-white-A700 shadow-bs4 rounded-[0.625rem] p-4">
             <img src={Deoctor1} alt="doctor-avatar" />
-            <h2 className="to-blue_gray-900 font-fredoka text-[1.25rem] md:text-[1.25rem] font-[500]">Dr. Arvind B. Dhameliya</h2>
-            <p className="font-dmsans text-[#888] text-[0.875rem] md:text-[1rem] font-[500] text-center">Consultant urologist,Laproscopic Surgeon & Andrologist</p>
+            <h2 className="to-blue_gray-900 font-fredoka text-[.875rem] md:text-[1.25rem] font-[500] text-center">Dr. Arvind B. Dhameliya</h2>
+            <p className="font-dmsans text-[#888] text-[0.5625rem] md:text-[1rem] font-[500] text-center">Consultant urologist,Laproscopic Surgeon & Andrologist</p>
         </div>
     );
 }
@@ -20,7 +20,7 @@ const AboutAbout = () => {
   return (
     <div className=" py-[10rem] bg-gray-100">
         <div className="max-w-[90%] mx-auto">
-            <div className="grid grid-cols-2 gap-6">
+            <div className="flex flex-col md:grid md:grid-cols-2 gap-6">
                 <div className="flex flex-col justify-center gap-4">
                     <Heading1
                         subHeading={`About doctor`}
@@ -42,10 +42,10 @@ const AboutAbout = () => {
                 </div>
                 <div className="flex relative">
                     <Card/>
-                    <div className="absolute top-[40%] left-[10%]">
+                    <div className="absolute top-0 md:top-[40%] left-[40%] md:left-[10%] ">
                         <SpringArrow/>
                     </div>
-                    <div className="h-full max-w-[70%] ml-auto rounded-[1.875rem] overflow-hidden border-8 border-white-A700 shadow-bs8">
+                    <div className="h-full max-w-[90%] md:max-w-[70%] ml-auto rounded-[1.875rem] overflow-hidden border-8 border-white-A700 shadow-bs8 mt-20 md:mt-0">
                         <img 
                             src={Deoctor3} 
                             alt="doctor-image" 
