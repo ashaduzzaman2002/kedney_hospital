@@ -95,6 +95,7 @@ module.exports = {
         bs5: "10px 14px  56px -1px #00000014",
         bs6: "21px 52px  79px 0px #38508119",
         bs7: "38px 50px  73px 0px #03234233",
+        bs8: "18px 39px 73px 0px rgba(0, 0, 0, 0.15)",
       },
       backgroundImage: {
         gradient: "linear-gradient(130deg ,#2d4472,#5f81c4)",

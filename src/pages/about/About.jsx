@@ -1,3 +1,4 @@
+import AboutAbout from "components/About/AboutAbout";
 import Cashless from "components/cashless/Cashless";
 import Officer from "components/officer/Officer";
 import HeroSecondary from "components/secondary-hero/HeroSecondary";
@@ -8,6 +9,7 @@ const About = () => {
   return (
     <Layout>
       <HeroSecondary title="About Us" />
+      <AboutAbout/>
       <Cashless />
       <Officer />
     </Layout>
