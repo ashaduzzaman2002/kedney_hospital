@@ -1,5 +1,6 @@
 import AboutAbout from "components/About/AboutAbout";
 import AboutHospital from "components/About/AboutHospital";
+import AboutGallery from "components/Gallery/AboutGallery";
 import Cashless from "components/cashless/Cashless";
 import Officer from "components/officer/Officer";
 import HeroSecondary from "components/secondary-hero/HeroSecondary";
@@ -14,6 +15,7 @@ const About = () => {
       <AboutAbout/>
       <Cashless />
       <Officer />
+      <AboutGallery/>
     </Layout>
   );
 };
