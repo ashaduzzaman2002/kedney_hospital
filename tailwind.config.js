@@ -106,6 +106,7 @@ module.exports = {
         gradient5: "linear-gradient(93deg ,#2b4b8b,#407cb7)",
         gradient6: "linear-gradient(138deg ,#e6e9ef,#dfe9ff,#f1f5ff)",
         gradient7: "linear-gradient(151deg, #E8EDF7 3.71%, #FFF 82.26%)",
+        gradient8: "linear-gradient(180deg, rgba(9, 48, 125, 0.00) -49.7%, rgba(56, 81, 130, 0.30) 100%)",
       },
       fontFamily: {
         dmsans: "DM Sans",
