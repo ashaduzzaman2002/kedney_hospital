@@ -77,31 +77,31 @@ const Card = ({ className, borderRadius, image }) => (
 
 const Card1 = () => (
   <div className="card-wrapper mt-20">
-    <div className="card h-[29rem] w-[48.875rem] mx-auto shadow-bs7 bg-blue_gray-900 rounded-[1.875rem] border-solid border-[#95BDFF] border-[6px] grid grid-cols-2 place-content-center place-items-center">
-      <div className=" place-items-center pl-[4rem]">
-        <h1 className=" text-[#fff] font-fredoka text-[2.5rem] not-italic font-[500] leading-normal">Cashless Facility Available</h1>
-        <div className=" flex justify-center items-center gap-2 rounded-[0.625rem] bg-[#fff] shadow-bs mt-4 py-2 px-8 w-fit">
+    <div className="card lg:h-[29rem] w-[90%] lg:w-[48.875rem] mx-auto shadow-bs7 bg-blue_gray-900 rounded-[1.875rem] border-solid border-[#95BDFF] border-[6px] grid lg:grid-cols-2 grid-cols-1 gap-20 lg:gap-10 place-content-center place-items-center pt-20 lg:py-0">
+      <div className="left place-items-center lg:pl-[4rem] px-8">
+        <h1 className=" text-[#fff] font-fredoka text-[2rem] lg:text-[2.5rem] not-italic font-[500] leading-normal">Cashless Facility Available</h1>
+        <div className=" flex justify-center items-center gap-2 rounded-[0.625rem] bg-[#fff] shadow-bs mt-4 py-2 px-6 lg:px-8 w-fit">
           <div className=" bg-[#032342] h-6 w-6 rounded-full flex justify-center items-center "><DialerIcon1/></div>
           <p className=" text-[#032342] font-dmsans text-[1.125rem] not-italic font-[500] leading-normal ">+91 261 2490001</p>
         </div>
       </div>
 
-      <div className="relative h-full w-full">
-        <div className="absolute left-[20%] -top-[25%] w-[27.17rem] h-[17.90494rem] rotate-18.38 shadow-bs8 border-2 rounded-[1.25rem] bg-gradient9 border-solid border-[#fff]  ">
+      <div className="right relative h-full w-full ">
+        <div className="lg:w-[27.17rem] lg:h-[17.90494rem] rotate-18.38 shadow-bs8 border-2 rounded-[1.25rem] bg-gradient9 border-solid border-[#fff] place-content-end ">
           
-          <div className="bg-gradient10 w-full h-[36%] rounded-tl-[1.25rem] rounded-tr-[1.25rem] overflow-hidden ">
+          <div className="left bg-gradient10 w-full h-[36%] rounded-tl-[1.25rem] rounded-tr-[1.25rem] overflow-hidden py-6 ">
             <div className="h-full pr-8 text-right flex justify-end items-center ">
-              <p className="capitalize text-[#fff] font-dmsans text-[1rem] leading-5 not-italic font-[500] ">Abc lorem ipsum</p>
+              <p className="capitalize text-[#fff] font-dmsans text-[0.625rem] leading-5 not-italic font-[500] ">Abc lorem ipsum</p>
             </div>
           </div>
           
-          <div className="h-[64%] grid grid-cols-[30%_50%_20%] ">
-            <div className=" pl-6 pb-6 place-self-end ">
-              <h2 className="capitalize text-[#385182] font-fredoka text-[1rem] leading-5 not-italic font-[500]">Patient Card</h2>
-              <h1 className="capitalize text-[#032342] font-dmsans text-[2rem] leading-[3.125rem] not-italic font-[500]">12/25</h1>
+          <div className="right h-[64%] grid grid-cols-[30%_50%_20%] py-4 ">
+            <div className=" lg:pl-6 lg:pb-6 place-self-end ">
+              <h2 className="capitalize text-[#385182] font-fredoka text-[0.625rem] leading-5 not-italic font-[500]">Patient Card</h2>
+              <h1 className="capitalize text-[#032342] font-dmsans text-[1.3125rem] leading-[3.125rem] not-italic font-[500]">12/25</h1>
             </div>
             <div className=" place-self-center">
-              <p className="capitalize text-[#0323421F] font-fredoka text-[1.875rem] leading-[3.125rem] not-italic font-[700] tracking-[0.375rem] ">MEDICO</p>
+              <p className="capitalize text-[#0323421F] font-fredoka text-[1.255rem] leading-[3.125rem] not-italic font-[700] tracking-[0.375rem] ">MEDICO</p>
             </div>          
           </div>
         </div>
