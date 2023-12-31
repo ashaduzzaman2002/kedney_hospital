@@ -107,6 +107,8 @@ module.exports = {
         gradient6: "linear-gradient(138deg ,#e6e9ef,#dfe9ff,#f1f5ff)",
         gradient7: "linear-gradient(151deg, #E8EDF7 3.71%, #FFF 82.26%)",
         gradient8: "linear-gradient(180deg, rgba(9, 48, 125, 0.00) -49.7%, rgba(56, 81, 130, 0.30) 100%)",
+        gradient9: "linear-gradient(259deg, #FFF 34.89%, #D4E3FF 95.82%)",
+        gradient10: "linear-gradient(90deg, #2B4C8C -1.23%, #407DB7 95.44%)",
       },
       fontFamily: {
         dmsans: "DM Sans",
@@ -126,6 +128,7 @@ module.exports = {
         '5': '5.17deg',
         '15': '15deg',
         '-12': '-12deg',
+        '18.38': '18.83deg',
       },
     },
   },
